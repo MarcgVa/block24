@@ -28,12 +28,7 @@ function App() {
         {puppies &&
           puppies.map((puppy) => {
             return (
-              <p
-                onClick={() => {
-                  setFeatPupId(puppy.id);
-                }}
-                key={puppy.id}
-              >
+              <p onClick={() => {setFeatPupId(puppy.id);}} key={puppy.id}>
                 {puppy.name}
               </p>
             );
